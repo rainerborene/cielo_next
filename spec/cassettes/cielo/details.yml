@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/5248d46d-f306-47d7-89ab-9c59c0c6061d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Merchantid:
+      - 34c7e09a-12c9-47bc-9e13-612512786368
+      Merchantkey:
+      - HESCNUSLIPGQQHEWSEHSGBGGEJWUZEFWIWBYFUUF
+      Requestid:
+      - dcd9c5e9-aaff-481b-8af4-c9b974ff9046
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '986'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      Requestid:
+      - dcd9c5e9-aaff-481b-8af4-c9b974ff9046
+      X-Response-Time:
+      - 1888ms
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 16 Jun 2018 16:24:18 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"MerchantOrderId":"90561903-e096-4868-b9f6-7b13ae676149","Customer":{"Name":"Isabella
+        Ferraz","Email":"isabella1@sandbox.pagseguro.com.br","Address":{}},"Payment":{"ServiceTaxAmount":0,"Installments":1,"Interest":"ByMerchant","Capture":false,"Authenticate":false,"CreditCard":{"CardNumber":"402400******3191","Holder":"Isabella
+        Ferraz","ExpirationDate":"10/2023","Brand":"Visa"},"ProofOfSale":"126720","Tid":"0410061600482","AuthorizationCode":"535244","PaymentId":"5248d46d-f306-47d7-89ab-9c59c0c6061d","Type":"CreditCard","Amount":39700,"ReceivedDate":"2018-04-10
+        18:15:59","CapturedAmount":39700,"CapturedDate":"2018-06-15 17:01:26","Currency":"BRL","Country":"BRA","Provider":"Simulado","Status":2,"Links":[{"Method":"GET","Rel":"self","Href":"https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/5248d46d-f306-47d7-89ab-9c59c0c6061d"},{"Method":"PUT","Rel":"void","Href":"https://apisandbox.cieloecommerce.cielo.com.br/1/sales/5248d46d-f306-47d7-89ab-9c59c0c6061d/void"}]}}'
+    http_version: 
+  recorded_at: Sat, 16 Jun 2018 16:24:19 GMT
+recorded_with: VCR 4.0.0

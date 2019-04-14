@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales?merchantOrderId=90561903-e096-4868-b9f6-7b13ae676149
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Merchantid:
+      - 34c7e09a-12c9-47bc-9e13-612512786368
+      Merchantkey:
+      - HESCNUSLIPGQQHEWSEHSGBGGEJWUZEFWIWBYFUUF
+      Requestid:
+      - 1f212254-464f-403c-a478-5e4e4153b595
+      User-Agent:
+      - Faraday v0.12.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '152'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      Requestid:
+      - 1f212254-464f-403c-a478-5e4e4153b595
+      X-Response-Time:
+      - 448ms
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 16 Jun 2018 15:55:25 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"ReasonCode":0,"ReasonMessage":"Successful","Payments":[{"PaymentId":"5248d46d-f306-47d7-89ab-9c59c0c6061d","ReceveidDate":"2018-04-10T18:15:59.673"}]}'
+    http_version: 
+  recorded_at: Sat, 16 Jun 2018 15:55:26 GMT
+recorded_with: VCR 4.0.0

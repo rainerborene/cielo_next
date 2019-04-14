@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://apisandbox.cieloecommerce.cielo.com.br/1/sales/5248d46d-f306-47d7-89ab-9c59c0c6061d/capture
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Merchantid:
+      - 34c7e09a-12c9-47bc-9e13-612512786368
+      Merchantkey:
+      - HESCNUSLIPGQQHEWSEHSGBGGEJWUZEFWIWBYFUUF
+      Requestid:
+      - 8da7a224-3167-458c-97b9-359af07675b7
+      User-Agent:
+      - Faraday v0.12.2
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '466'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.0
+      Requestid:
+      - 8da7a224-3167-458c-97b9-359af07675b7
+      X-Response-Time:
+      - 2337ms
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Fri, 15 Jun 2018 20:01:27 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"Status":2,"ReasonCode":0,"ReasonMessage":"Successful","ProviderReturnCode":"6","ProviderReturnMessage":"Operation
+        Successful","ReturnCode":"6","ReturnMessage":"Operation Successful","Links":[{"Method":"GET","Rel":"self","Href":"https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/5248d46d-f306-47d7-89ab-9c59c0c6061d"},{"Method":"PUT","Rel":"void","Href":"https://apisandbox.cieloecommerce.cielo.com.br/1/sales/5248d46d-f306-47d7-89ab-9c59c0c6061d/void"}]}'
+    http_version: 
+  recorded_at: Fri, 15 Jun 2018 20:01:27 GMT
+recorded_with: VCR 4.0.0

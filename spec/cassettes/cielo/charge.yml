@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://apisandbox.cieloecommerce.cielo.com.br/1/sales
+    body:
+      encoding: UTF-8
+      string: '{"MerchantOrderId":"5d487b57-6813-4bc9-889f-25873cfeb288","Customer":{"Name":"Maria"},"Payment":{"Type":"CreditCard","Amount":1500,"Installments":1,"SoftDescriptor":"App","RecurrentPayment":{"AuthorizeNow":true,"Interval":"Annual"},"CreditCard":{"CardNumber":"1234123412341231","Holder":"Maria","ExpirationDate":"12/2030","SecurityCode":262,"Brand":"Visa"}}}'
+    headers:
+      Merchantid:
+      - 34c7e09a-12c9-47bc-9e13-612512786368
+      Merchantkey:
+      - HESCNUSLIPGQQHEWSEHSGBGGEJWUZEFWIWBYFUUF
+      Requestid:
+      - eaf4f554-4be2-4c0e-8556-8e5dfb99a7d2
+      User-Agent:
+      - Faraday v0.12.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1473'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Location:
+      - https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/07b789a6-53ca-46db-8cb6-2282131f5a67
+      Server:
+      - Microsoft-IIS/8.0
+      Requestid:
+      - eaf4f554-4be2-4c0e-8556-8e5dfb99a7d2
+      X-Response-Time:
+      - 2569ms
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 12 Jul 2018 00:20:29 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"MerchantOrderId":"5d487b57-6813-4bc9-889f-25873cfeb288","Customer":{"Name":"Maria"},"Payment":{"ServiceTaxAmount":0,"Installments":1,"Interest":0,"Capture":false,"Authenticate":false,"Recurrent":false,"CreditCard":{"CardNumber":"123412******1231","Holder":"Maria","ExpirationDate":"12/2030","SaveCard":false,"Brand":"Visa"},"Tid":"0711092027463","ProofOfSale":"2027463","AuthorizationCode":"609163","SoftDescriptor":"App","Provider":"Simulado","Amount":1500,"ReceivedDate":"2018-07-11
+        21:20:26","RecurrentPayment":{"RecurrentPaymentId":"52b875fc-20ab-4e7b-be7e-3a3456ffe25d","ReasonCode":0,"ReasonMessage":"Successful","NextRecurrency":"2019-07-11","Interval":12,"Link":{"Method":"GET","Rel":"recurrentPayment","Href":"https://apiquerysandbox.cieloecommerce.cielo.com.br/1/RecurrentPayment/52b875fc-20ab-4e7b-be7e-3a3456ffe25d"},"AuthorizeNow":true},"Status":1,"IsSplitted":false,"ReturnMessage":"Operation
+        Successful","ReturnCode":"4","PaymentId":"07b789a6-53ca-46db-8cb6-2282131f5a67","Type":"CreditCard","Currency":"BRL","Country":"BRA","Links":[{"Method":"GET","Rel":"self","Href":"https://apiquerysandbox.cieloecommerce.cielo.com.br/1/sales/07b789a6-53ca-46db-8cb6-2282131f5a67"},{"Method":"PUT","Rel":"capture","Href":"https://apisandbox.cieloecommerce.cielo.com.br/1/sales/07b789a6-53ca-46db-8cb6-2282131f5a67/capture"},{"Method":"PUT","Rel":"void","Href":"https://apisandbox.cieloecommerce.cielo.com.br/1/sales/07b789a6-53ca-46db-8cb6-2282131f5a67/void"}]}}'
+    http_version: 
+  recorded_at: Thu, 12 Jul 2018 00:20:29 GMT
+recorded_with: VCR 4.0.0
